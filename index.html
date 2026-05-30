@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Producto | Landing Básica</title>
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* --- NAVEGACIÓN --- */
+        header {
+            background-color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* --- SECCIÓN HERO (Principal) --- */
+        .hero {
+            background-color: #f4f7f6;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004494;
+        }
+
+        /* --- SECCIÓN CARACTERÍSTICAS --- */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px 50px;
+            background-color: #fff;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            flex-basis: 30%;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- RESPONSIVIDAD (Móviles) --- */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                flex-basis: 100%;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header>
+        <div class="logo">MiMarca</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero" id="inicio">
+        <h1>La solución que estabas esperando</h1>
+        <p>Aumenta tu productividad y mejora tus resultados con nuestra nueva herramienta diseñada especialmente para ti.</p>
+        <a href="#comprar" class="btn">Empieza Gratis Ahora</a>
+    </section>
+
+    <!-- Sección de Características -->
+    <section class="features" id="caracteristicas">
+        <div class="feature-box">
+            <h3>Fácil de usar</h3>
+            <p>Una interfaz intuitiva que te permitirá empezar a trabajar en cuestión de minutos sin complicaciones.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Rápido y Seguro</h3>
+            <p>Tus datos están protegidos con los estándares de seguridad más altos de la industria.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Soporte 24/7</h3>
+            <p>Nuestro equipo de expertos está disponible en todo momento para ayudarte con cualquier duda.</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2026 MiMarca. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
